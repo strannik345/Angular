@@ -1,0 +1,13 @@
+.wrapper{
+  margin: 0 auto;
+  width: 1280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.login{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
