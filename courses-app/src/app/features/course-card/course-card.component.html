@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-description">
+    <p class="title">{{card?.title}}</p>
+    <p class="description">{{card?.description}}</p>
+  </div>
+  <div class="card-info">
+    <div>
+      <span>Authors: </span>
+      <span *ngFor="let author of card?.authors">{{author}} </span>
+    </div>
+    <div>
+      <span>Duration: </span>
+      <span>{{card?.duration}} </span>
+    </div>
+    <div>
+      <span>Created: </span>
+      <span>{{card?.creationDate}}</span>
+    </div>
+    <div class="btn-container">
+      <app-button btnText="Show Course"></app-button>
+      <fa-icon *ngIf="editable === true" [icon]="penIcon" size="2x" [styles]="{color: '#007298'}"></fa-icon>
+      <fa-icon *ngIf="editable === true" [icon]="trashIcon" size="2x" [styles]="{color: '#007298'}"></fa-icon>
+    </div>
+  </div>
+</div>
