@@ -11,29 +11,23 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginComponent } from '../features/login/login.component';
 import { RegistrationComponent } from '../features/registration/registration.component';
 
+const COMPONENTS = [
+  CoursesComponent,
+  CourseComponent,
+  HeaderComponent,
+  ButtonComponent,
+  InfoComponent,
+  CourseListComponent,
+  CourseCardComponent,
+  LoginComponent,
+  RegistrationComponent
+]
 @NgModule({
-  declarations: [
-    CoursesComponent,
-    CourseComponent,
-    HeaderComponent,
-    ButtonComponent,
-    InfoComponent,
-    CourseListComponent,
-    CourseCardComponent,
-    LoginComponent,
-    RegistrationComponent
-  ],
+  declarations: [...COMPONENTS],
   imports: [
     CommonModule,
     FontAwesomeModule
   ],
-  exports: [
-    CoursesComponent,
-    CourseComponent,
-    CourseListComponent,
-    CourseCardComponent,
-    LoginComponent,
-    RegistrationComponent
-  ]
+  exports: [...COMPONENTS]
 })
 export class SharedModule { }
