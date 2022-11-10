@@ -23,11 +23,11 @@ const COMPONENTS = [
   RegistrationComponent
 ]
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: COMPONENTS,
   imports: [
     CommonModule,
     FontAwesomeModule
   ],
-  exports: [...COMPONENTS]
+  exports: COMPONENTS
 })
 export class SharedModule { }
